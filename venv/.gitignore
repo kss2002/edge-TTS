@@ -4,3 +4,4 @@ lib
 __pycache__/
 .DS_Store
 output_tts.mp3
+*.md
