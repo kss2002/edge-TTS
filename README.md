@@ -18,10 +18,11 @@ Python과 Streamlit을 사용하여 제작되었으며, 별도의 API 키 없이
 
 ```bash
 source venv/bin/activate
+cd venv
 streamlit run app.py
 ```
 
-다음 로컬 호스트 링크로 접속
+다음 로컬 호스트 링크로 자동 접속
 
 http://localhost:8501
 
