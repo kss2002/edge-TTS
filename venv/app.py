@@ -4,11 +4,11 @@ import asyncio
 import os
 
 # 페이지 기본 설정
-st.set_page_config(page_title="내 전용 TTS", page_icon="🎙️")
-st.title("🎙️ AI 성우 TTS 생성기")
+st.set_page_config(page_title="내 전용 TTS", page_icon="❤️")
+st.title("AI 성우 TTS 생성기")
 
 # 1. 텍스트 입력 받기
-text = st.text_area("대본을 입력하세요:", height=150, placeholder="여기에 읽을 내용을 적으세요.")
+text = st.text_area("대본을 입력하세요:", height=300, placeholder="여기에 읽을 내용을 적으세요.")
 
 # 2. 옵션 설정 (사이드바)
 with st.sidebar:
@@ -34,7 +34,7 @@ async def generate_tts(text, voice, rate, output_file):
     await communicate.save(output_file)
 
 # 4. 버튼 클릭 시 실행
-if st.button("🔊 음성 생성하기", type="primary"):
+if st.button("음성 생성하기", type="primary"):
     if not text:
         st.warning("텍스트를 입력해주세요!")
     else:
@@ -53,7 +53,7 @@ if st.button("🔊 음성 생성하기", type="primary"):
         
         # 다운로드 버튼
         st.download_button(
-            label="💾 MP3 다운로드",
+            label="MP3 다운로드",
             data=audio_bytes,
             file_name="my_tts.mp3",
             mime="audio/mp3"
