@@ -27,3 +27,5 @@ streamlit run app.py
 http://localhost:8501
 
 컨트롤 + C로 서버를 종료합니다.
+
+<img width="1920" height="1080" alt="edge-tts 로컬" src="https://github.com/user-attachments/assets/9136b5be-96a6-437b-a135-623912da7e84" />
