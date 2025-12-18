@@ -38,3 +38,7 @@ http://localhost:8501
 
 <img width="1920" height="1080" alt="edge-tts 로컬" src="https://github.com/user-attachments/assets/52d39394-7d0b-443a-9d68-0fd3c9a99a78" />
 
+## 라이센스
+
+반드시 라이센스를 확인해주세요.
+https://github.com/kss2002/edge-tts/blob/main/LICENSE
