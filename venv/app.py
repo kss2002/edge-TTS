@@ -13,19 +13,19 @@ text = st.text_area("대본을 입력하세요:", height=300, placeholder="여�
 # 2. 옵션 설정 (사이드바)
 with st.sidebar:
     st.header("옵션 설정")
-    
+
     # 성우 선택 / 안정적인 목소리 위주
     voice_options = {
         "선희 (여성, 아나운서 톤)": "ko-KR-SunHiNeural", 
-        "인준 (남성, 차분함)": "ko-KR-InJoonNeural",
-        "현수 (남성, 밝고 캐주얼)": "ko-KR-HyunsuNeural",  
+        "인준 (남성, 밝고 캐주얼)": "ko-KR-InJoonNeural",
+        "현수 (남성, 차분함)": "ko-KR-HyunsuNeural",  
     }
 
     selected_voice_name = st.selectbox("목소리 선택", list(voice_options.keys()))
     voice = voice_options[selected_voice_name]
 
     # 속도 조절
-    rate = st.slider("말하기 속도", -50, 50, 10, format="%d%%")
+    rate = st.slider("말하기 속도", -50, 50, 15, format="%d%%")
     rate_str = f"{'+' if rate >= 0 else ''}{rate}%"
 
 # 3. 변환 함수 (비동기 처리)
