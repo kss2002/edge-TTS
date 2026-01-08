@@ -14,11 +14,14 @@ Python과 Streamlit을 사용하여 제작되었으며, 별도의 API 키 없이
 
 이 프로젝트는 Python 3.9 이상 환경에서 권장됩니다.
 
-- https://github.com/kss2002/edge-tts/releases/tag/1v
+https://github.com/kss2002/edge-TTS/releases/tag/1.1v
 
 위 링크로 들어가서 edge.zip를 다운로드 받고, 압축을 해제합니다. <br/>
 압축 해제된 폴더를 vs code나 커서 등의 에디터로 오픈합니다. 
 
+<div align="center">
+<img width="310" height="187" alt="edge" src="https://github.com/user-attachments/assets/51bd6da3-2598-4ead-bbac-d0a426995aa0" />
+</div>
 
 ### 실행 방법
 
