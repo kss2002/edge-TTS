@@ -16,8 +16,8 @@ with st.sidebar:
 
     # 성우 선택 / 안정적인 목소리 위주
     voice_options = {
-        "인준 (남성, 밝고 캐주얼)": "ko-KR-InJoonNeural",
         "현수 (남성, 차분함)": "ko-KR-HyunsuNeural",  
+        "인준 (남성, 밝고 캐주얼)": "ko-KR-InJoonNeural",
         "선희 (여성, 아나운서 톤)": "ko-KR-SunHiNeural", 
     }
 
@@ -25,7 +25,7 @@ with st.sidebar:
     voice = voice_options[selected_voice_name]
 
     # 속도 조절
-    rate = st.slider("말하기 속도", -50, 50, 15, format="%d%%")
+    rate = st.slider("말하기 속도", -50, 50, 20, format="%d%%")
     rate_str = f"{'+' if rate >= 0 else ''}{rate}%"
 
 # 3. 변환 함수 (비동기 처리)
